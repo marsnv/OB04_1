@@ -22,10 +22,8 @@ class Fighter:
         self.weapon = weapon
 
     def attack(self):
-        if self.weapon:
-            return self.weapon.attack()
-        else:
-            return "Боец безоружен."
+        return self.weapon.attack()
+
 
 class Monster:
     def __init__(self, name):
